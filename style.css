@@ -21,3 +21,30 @@
     margin: 0;
     padding: 0;
 }
+
+/* Navbar */
+
+.navbar {
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.navbar-title {
+    font-family: var(--font-family-primary);
+    font-weight: normal;
+    font-size: 26px;
+    color: var(--cor3);
+}
+
+.navbar-links > a {
+    font-family: var(--font-family-secondary);
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--cor5);
+    margin-left: 30px;
+}
