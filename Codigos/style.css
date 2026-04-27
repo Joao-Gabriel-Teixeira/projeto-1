@@ -1,20 +1,19 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap");
 
 :root {
+    --cor1: #1c1c1c;/*Fundo escuro / Navbar*/
+    --cor2: #2a2a2a;/*Cards escuros*/
+    --cor3: #d4a853;/*Dourado / Destaque*/
+    --cor4: #c4933f;/*Dourado hover*/
+    --cor5: #faf8f4;/*Fundo da página*/
+    --cor6: #777777;/*Textos secundários*/
+    --cor7: #25d366;/*Botão WhatsApp*/
+    --cor8: #1db954;/*WhatsApp hover*/
 
-    --cor1: #1c1c1c; /*Fundo escuro / Navbar*/
-    --cor2: #2a2a2a; /*Cards escuros*/
-    --cor3: #d4a853; /*Dourado / Destaque*/
-    --cor4: #c4933f; /*Dourado hover*/
-    --cor5: #faf8f4; /*Fundo da página*/
-    --cor6: #777777; /*Textos secundários*/
-    --cor7: #25d366; /*Botão WhatsApp*/
-    --cor8: #1db954; /*WhatsApp hover*/
-
-    --font-family-primary: 'Playfair Display', serif;  /*Títulos e Logo*/
-    --font-family-secondary: 'Lato', sans-serif; /*Textos e navegação*/
+    --font-family-primary: "Playfair Display", serif;/*Títulos e Logo*/
+    --font-family-secondary: "Lato", sans-serif;/*Textos e navegação*/
 }
 
 * {
@@ -39,7 +38,7 @@
     color: var(--cor3);
 }
 
-.navbar-links > a {
+.navbar-links>a {
     font-family: var(--font-family-secondary);
     font-size: 14px;
     font-weight: 300;
@@ -47,4 +46,63 @@
     text-transform: uppercase;
     color: var(--cor5);
     margin-left: 30px;
+}
+
+/* Div - destaque */
+
+.banner {
+    width: 100%;
+    height: 580px;
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&fit=crop");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.destaque{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* centraliza vertical */
+    align-items: center;      /* centraliza horizontal */
+    text-align: center;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.destaque > h2 {
+    font-family: var(--font-family-primary);
+    font-size: 50px;
+    color: var(--cor5);
+    margin-bottom: 16px;
+}
+
+.destaque > .paragrafy-gold {
+    color: var(--cor4);
+    margin-bottom: 16px;
+    letter-spacing: 0.2em;
+}
+
+.destaque p {
+    color: rgb(167, 167, 167);
+    font-family: var(--font-family-secondary);
+    margin-top: 14px;
+    margin-bottom: 16px;
+    line-height: 1.5em;
+}
+
+.destaque button {
+    background-color: var(--cor3);
+    color: var(--cor1);
+    font-family: var(--font-family-secondary);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    padding: 12px 37px;
+    margin-top: 24px;
+    cursor: pointer;
 }
